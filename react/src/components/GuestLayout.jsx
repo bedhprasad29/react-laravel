@@ -11,7 +11,6 @@ export default function GuestLayout() {
 
     return (
         <div>
-            This is a text
             <Outlet />
         </div>
     )
