@@ -20,6 +20,8 @@ export default function Register() {
       confirm_password: confirmPasswordRef.current.value,
     }
 
+    console.log(payload);
+
     axiosClient.post('/signup', payload)
       .then(({ data }) => {
         setToken(data.token)
@@ -33,7 +35,6 @@ export default function Register() {
         }
       })
 
-    console.log(payload);
   }
 
   return (
